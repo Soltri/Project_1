@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 13px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.navborder {
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ff5722;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+img.header-img {
+  height: 50px;
+}
+
+nav > a {
+  margin-right: 10px;
+  padding-left: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffc93c;
+}
+
+.nav-space {
+  width: 5px;
+}
+
+.navlink1 {
+  margin-left: 10px;
+  padding-left: 0%;
+}
+
+.search-container {
+  float: right;
+  flex: 50%;
+}
+
+form {
+  margin-right: 15px;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  font-weight: lighter;
+  width: 274.6px;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+}
+
+.search-container button {
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 9px;
+  background: #ffc93c;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  color: white;
+  background: #000;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr;
+  /* gap: 20px 15px; */
+  column-gap: 15px;
+}
+
+.side-section {
+  margin-top: 20px;
+  margin-right: 15px;
+  background-color: #1b1b1b;
+  padding: 20px;
+  padding-top: 5px;
+}
+
+.side-section > ul {
+  padding: 0%;
+  list-style-type: none;
+}
+
+.side-section > ul > li {
+  display: flex;
+  margin-bottom: 10px;
+  /* border: solid red 1px; */
+}
+
+.side-section > ul > li > span {
+  /* border: solid red 1px; */
+  padding-right: 4px;
+  padding-left: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  border-top: solid #ffc93c 2px;
+  background-color: #ffc93c;
+  color: #000;
+  width: 13%;
+}
+
+.side-link {
+  text-decoration: none;
+}
+
+.actual-info {
+  /* border: solid red 1px; */
+  margin: 1% 0 0 0;
+  font-size: 10.7px;
+  color: #aaa;
+  font-weight: lighter;
+}
+
+.thumbnail-sec {
+  max-height: 70px;
+  max-width: 50;
+  padding-right: 4px;
+  border-top: solid #ffc93c 2px;
+}
+
+.sec-info {
+  padding-top: 3px;
+  border-top: solid #ffc93c 2px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.main-section {
+  margin-top: 20px;
+  margin-left: 15px;
+  background-color: #1b1b1b;
+  padding-top: 5px;
+  /* padding-bottom: 15px; */
+}
+
+.second {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.ex {
+  display: flex;
+  flex-direction: column;
+  /* border: solid red 1px; */
+  justify-content: center;
+}
+
+.ex1 {
+  margin-right: 40px;
+  /* border: solid red 1px; */
+}
+
+footer {
+  list-style-type: none;
+  color: white;
+  height: 100px;
+  background-color: #ff5722;
+  padding: 20px;
+}
+
+u {
+  display: inline-flex;
+}
+
+u > li {
+  margin: 3px;
+}
+
+.anime-thumb > .align-thumb {
+  margin: 5px;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  width: 166px;
+  height: 355px;
+  word-break: break-all;
+  float: left;
+  /* border: solid #ffc93c 1px; */
+  border-bottom: solid #ffc93c 3px;
+}
+
+.anime-thumb > .exception {
+  list-style-type: none;
+  margin-left: 5px;
+}
+
+.article-sec {
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 40px;
+  width: 860.5px;
+}
+
+.contain-art {
+  width: auto;
+  /* border: solid red 1px; */
+  display: flex;
+  justify-content: center;
+}
+
+.article-sec > .contain-art > article {
+  padding: 2.5px 2.5px 0 2.5px;
+  margin-bottom: 10px;
+  height: auto;
+  width: 534.75px;
+  /* border-bottom: solid #ffc93c 2px; */
+  /* border: solid red 1px; */
+}
+
+article > a {
+  font-size: 14.5px;
+  text-decoration: none;
+  color: #aaa;
+  /* font-weight: lighter; */
+}
+
+article > h1 {
+  margin: 0 0 2.5px 0;
+}
+
+article > .author > a {
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+  font-weight: lighter;
+}
+
+article > .author {
+  font-weight: lighter;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* border-bottom: solid #ffc93c 1px; */
+}
+
+article > .author > .date {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.article-con {
+  display: flex;
+  padding-bottom: 5px;
+  border-left: solid #ffc93c 1px;
+  border-bottom: solid #ffc93c 2px;
+}
+
+.article-con > p {
+  margin: 0 5px 0 7.5px;
+  word-break: normal;
+  font-size: 14px;
+}
+
+article > .link-more {
+  display: flex;
+  /* border: solid red 1px; */
+  justify-content: right;
+}
+
+.link-more > a {
+  margin-right: 5px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffc93c;
+}
+
+/* .link-more > a:hover {
+  color: white;
+} */
+
+.exception > h2 {
+  margin: 0;
+}
+
+.anime-thumb > .exception > h2 {
+  text-decoration: underline #ffc93c 3px;
+}
+
+.side-section > h2 {
+  text-decoration: underline #ffc93c 3px;
+}
+
+.align-thumb > p {
+  text-align: center;
+  padding: 0 5px 0 5px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: #aaa;
+}
+
+img.thumbnail {
+  max-height: 230.88px;
+  max-width: 163.672px;
+}
+
+.fig-container {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  /* border: solid red 1px; */
+}
+
+figcaption {
+  /* border: solid #ff5722 1px; */
+  /* font-size: 12px; */
+}
+
+/* .division {
+  border: solid red 1px;
+} */
+
+.link-thumb {
+  text-decoration: none;
+  color: white;
+}
+
+.container-info {
+  display: flex;
+}
+
+.container-info > .score > .child {
+  display: inline;
+  background-color: #ff5722;
+  border-radius: 2px;
+  height: 5px;
+  width: 7px;
+  flex: 1;
+  padding: 2px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.anime-info {
+  margin-left: 5px;
+  margin-right: 5px;
+  /* border: solid blue 1px; */
+  flex: 1;
+}
+
+.container-info > .number {
+  float: left;
+  font-size: large;
+}
+
+.container-info > .anime-info > .actual-info {
+  text-align: right;
+  font-size: 10.7px;
+  margin: 0%;
+  font-weight: normal;
+}
+
+.container-info > .score > .number {
+  margin-top: 1px;
+  margin-left: 5px;
+  font-size: 20px;
+}
