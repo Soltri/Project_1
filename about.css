@@ -1,0 +1,48 @@
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+}
+
+.termi {
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%;
+  padding: 0 15px 0 15px;
+}
+
+.termi-section {
+  /* height: 100%; */
+  padding-top: 48px;
+  /* width: 100%; */
+  background-color: #1b1b1b;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img-sorry {
+  display: flex;
+  align-items: center;
+}
+
+.txt-sorry {
+  display: flex;
+  align-items: center;
+}
+
+.txt-sorry > p {
+  font-size: 15px;
+  text-align: center;
+  margin: 0 30px 0 30px;
+}
+
+footer {
+  position: absolute;
+}
+
+.neko {
+  height: 300px;
+}

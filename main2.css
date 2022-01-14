@@ -3,6 +3,7 @@
 }
 
 body {
+  height: 100%;
   margin: 0%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -96,6 +97,7 @@ input[type="text"] {
 }
 
 main {
+  height: 100%;
   color: white;
   background: #000;
   display: grid;
@@ -402,6 +404,8 @@ main {
 }
 
 footer {
+  width: 100%;
+  position: absolute;
   color: white;
   background-color: #ff5722;
   padding: 20px;
