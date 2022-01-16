@@ -1,8 +1,9 @@
-* {
+html {
   box-sizing: border-box;
 }
 
 body {
+  display: grid;
   height: 100%;
   margin: 0%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -343,6 +344,7 @@ main {
 }
 
 .main-section {
+  height: 100%;
   display: flex;
   flex-direction: column;
   /* margin-top: 20px; */
@@ -404,8 +406,9 @@ main {
 }
 
 footer {
-  width: 100%;
-  position: absolute;
+  /* display: grid; */
+  /* width: 100%; */
+  position: relative;
   color: white;
   background-color: #ff5722;
   padding: 20px;
@@ -826,3 +829,24 @@ figcaption {
   margin-left: 5px;
   font-size: 20px;
 }
+
+/* @media screen and (max-width: 414px) {
+  .side-section {
+    display: none;
+  }
+
+  .anime-thumb > .align-thumb {
+    margin: 5px;
+    list-style-type: none;
+    display: inline;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    width: 366px;
+    height: 555px;
+    word-break: keep-all;
+    float: left;
+    /* border: solid #ffc93c 1px; */
+    border-bottom: solid #ffc93c 3px;
+  }
+} */
