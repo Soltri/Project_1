@@ -5,8 +5,19 @@
         <meta charset="UTF-8">
         <script src="https://kit.fontawesome.com/c6e15ef449.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <link rel="stylesheet" href="main2.css">
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -23,8 +34,17 @@
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
+                    <div class="menu"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
             </nav>
             </div>
+                                <div id="myLinks">
+                                    <a href="about.html">ANIME</a>
+                                    <a href="about.html">MANGA</a>
+                                    <a href="about.html">SOUNDTRACK</a>
+                                </div>
         </header>
     <main>
                 <section class="main-section">
@@ -34,7 +54,7 @@
                             <h2>Popular</h2>
                         </li>
                         <br>
-                        <li class="align-thumb">
+                        <li class="align-thumb reo">
                             <a class="link-thumb" href="#"><img class="thumbnail" src="media\fmab.jpg" alt="fullmetal-alchemist-brotherhood"></a>
                             <div class="fig-container">
                                 <figcaption><a class="who" href="#">Fullmetal Alchemist: <br>Brotherhood</a></figcaption>
@@ -224,7 +244,7 @@
                                     <div class="contain-art">
                                         <article>
                                             <h1>RESULTS: Which 2021 Anime Did You Vote As Your Favorite?</h1>
-                                            <a href="#">Will your favorite series make the list?</a>
+                                            <div class="sub"><a href="#">Will your favorite series make the list?</a></div>
                                             <div class="author">
                                                 <a href="">Jared Clemons</a>
                                                 <div class="date">January 2, 2022 12:00pm PST <i>(12 hours ago)</i></div>
@@ -245,7 +265,7 @@
                                     <div class="contain-art">
                                         <article>
                                             <h1>Aqua & Kazuma Narrate New PV for Kurone Mishima's 2nd KONOSUBA Art Collection Book</h1>
-                                            <a href="#">The fantasy novel series has reached a milestone of 10 million copies</a>
+                                            <div class="sub"><a href="#">The fantasy novel series has reached a milestone of 10 million copies</a></div>
                                             <div class="author">
                                                 <a href="">Mikikazu Komatus</a>
                                                 <div class="date">January 3, 2022 8:5am PST <i>(7 hours ago)</i></div>
@@ -264,7 +284,7 @@
                                     <div class="contain-art">
                                         <article>
                                             <h1>Classic Anime Urusei Yatsura Gets All-Star 4 Part New TV Series in 2022 at David Production</h1>
-                                            <a href="#">Urusei Yatsura 2022 to air in Fuji TV's Noitamina block this year</a>
+                                            <div class="sub"><a href="#">Urusei Yatsura 2022 to air in Fuji TV's Noitamina block this year</a></div>
                                             <div class="author">
                                                 <a href="">Daryl Harding</a>
                                                 <div class="date">January 1, 2022 12:19pm PST <i>(23 hours ago)</i></div>
@@ -448,11 +468,11 @@
                     </div>
                     <div class="gap"></div>
                     <ul class="want">
-                    <a class="twitter-timeline" data-height="430" data-theme="dark"
+                    <a class="twitter-timeline" data-height="365" data-theme="dark"
                         href="https://twitter.com/Crunchyroll?ref_src=twsrc%5Etfw">Tweets by Crunchyroll</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </ul>
-                    <div class="end"></div>
+                    <!-- <div class="end"></div> -->
         </section>
     </main>        
     <footer>
