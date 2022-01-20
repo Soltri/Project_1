@@ -62,10 +62,6 @@ footer {
     text-align: center;
   }
 
-  #myLinks > a:first-child {
-    /* margin-top: 80px; */
-  }
-
   .menu {
     height: 100%;
     flex: 1;
