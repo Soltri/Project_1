@@ -58,6 +58,12 @@ nav > .navlink {
   width: 5px;
 }
 
+#twtr-widget-1 .twtr-new-results,
+#twtr-widget-1 .twtr-results-inner,
+#twtr-widget-1 .twtr-timeline {
+  background: #ffffff !important;
+}
+
 .navlink1 {
   margin-left: 10px;
   padding-left: 0%;
@@ -113,6 +119,10 @@ main {
   padding-bottom: 0;
   padding-top: 5px;
   height: fit-content;
+}
+
+.side-section > ul > li {
+  width: 266.5px;
 }
 
 .side-more {
@@ -722,6 +732,7 @@ article > .link-more {
 
 .want {
   margin: 0;
+  background-color: #000;
 }
 
 .twitter-timeline {
@@ -1070,4 +1081,54 @@ figcaption {
   /* .side-section {
     display: none;
   } */
+}
+
+@media screen and (min-width: 376px) and (max-width: 1046px) {
+  .side-section {
+    display: none;
+  }
+
+  .primary-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fhalf {
+    justify-content: center;
+    border-right: none;
+    border-bottom: solid white 1px;
+    /* border: solid black 1px; */
+  }
+
+  .fhalf > li {
+    padding: 0 0 16px 0;
+    margin: 0;
+  }
+
+  .fhalf > li:last-child {
+    padding: 0;
+  }
+
+  .shalf {
+    justify-content: center;
+    /* border: solid black 1px; */
+  }
+
+  .shalf > li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .shalf > li:first-child {
+    padding: 0;
+  }
+
+  .finale {
+    text-align: center;
+  }
+
+  .fin {
+    text-align: center;
+  }
 }
