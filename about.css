@@ -8,6 +8,7 @@ body {
   height: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 90% 10%;
+  /* row-gap: 15px; */
   padding: 0 15px 0 15px;
 }
 
@@ -30,6 +31,7 @@ body {
 }
 
 .txt-sorry > p {
+  font-weight: 300;
   font-size: 15px;
   text-align: center;
   margin: 0 30px 0 30px;
@@ -40,5 +42,113 @@ footer {
 }
 
 .neko {
-  height: 300px;
+  height: 200px;
+}
+
+@media screen and (max-width: 375px) {
+  #myLinks {
+    display: none;
+  }
+
+  #myLinks a {
+    /* border: solid green 1px; */
+    color: white;
+    /* padding-bottom: 16px; */
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    background-color: #1b1b1b;
+    border: solid #1b1b1b 10px;
+    text-align: center;
+  }
+
+  #myLinks > a:first-child {
+    /* margin-top: 80px; */
+  }
+
+  .menu {
+    height: 100%;
+    flex: 1;
+    /* border: solid blue 1px; */
+    /* display: block; */
+  }
+
+  a.icon {
+    margin-top: 6.9px;
+    font-size: 25px;
+    margin-right: 10px;
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 13;
+    right: 0;
+    top: 0;
+  }
+
+  main.termi {
+    width: 345px;
+  }
+
+  .img-sorry {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #myLinks a:hover {
+    color: #ffc93c;
+  }
+
+  section.termi-section {
+    padding: 0;
+    width: 345px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .primary-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fhalf {
+    justify-content: center;
+    border-right: none;
+    border-bottom: solid white 1px;
+    /* border: solid black 1px; */
+  }
+
+  .fhalf > li {
+    padding: 0 0 16px 0;
+    margin: 0;
+  }
+
+  .fhalf > li:last-child {
+    padding: 0;
+  }
+
+  .shalf {
+    justify-content: center;
+    /* border: solid black 1px; */
+  }
+
+  .shalf > li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .shalf > li:first-child {
+    padding: 0;
+  }
+
+  .finale {
+    text-align: center;
+  }
+
+  .fin {
+    text-align: center;
+  }
 }
