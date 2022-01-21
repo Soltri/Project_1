@@ -1,20 +1,29 @@
-html,
-body {
+html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
 }
 
+body {
+  display: block;
+}
+
 .termi {
-  height: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 90% 10%;
+  display: block;
+  /* width: 100%; */
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 15fr; */
   /* row-gap: 15px; */
   padding: 0 15px 0 15px;
 }
 
+.gap {
+  height: 100px;
+}
+
 .termi-section {
+  height: 100%;
   background-color: #1b1b1b;
-  padding: 40px;
+  padding: 0 40px 0 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,6 +44,16 @@ body {
   font-size: 15px;
   text-align: center;
   margin: 0 30px 0 30px;
+}
+
+.txt-sorry > p > a {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.txt-sorry > p > a:hover {
+  color: #ffc93c;
+  font-weight: 400;
 }
 
 footer {
@@ -104,6 +123,52 @@ footer {
     flex-direction: column;
   }
 
+  .primary-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fhalf {
+    justify-content: center;
+    border-right: none;
+    border-bottom: solid white 1px;
+    /* border: solid black 1px; */
+  }
+
+  .fhalf > li {
+    padding: 0 0 16px 0;
+    margin: 0;
+  }
+
+  .fhalf > li:last-child {
+    padding: 0;
+  }
+
+  .shalf {
+    justify-content: center;
+    /* border: solid black 1px; */
+  }
+
+  .shalf > li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .shalf > li:first-child {
+    padding: 0;
+  }
+
+  .finale {
+    text-align: center;
+  }
+
+  .fin {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1046px) {
   .primary-footer {
     display: flex;
     flex-direction: column;
